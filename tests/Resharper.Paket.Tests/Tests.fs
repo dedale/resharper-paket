@@ -5,6 +5,6 @@ open NUnit.Framework
 
 [<Test>]
 let ``hello returns 42`` () =
-  let result = Library.hello 42
+  let result = Library.hello 0
   printfn "%i" result
-  Assert.AreEqual(42,result)
+  Assert.AreEqual(42, result)

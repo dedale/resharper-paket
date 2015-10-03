@@ -45,7 +45,7 @@ let authors = [ "Vianney PHILIPPE" ]
 let tags = "paket visualstudio resharper"
 
 // File system information 
-let solutionFile  = "Resharper.Paket.sln"
+let solutionFile = "Resharper.Paket.sln"
 
 // Pattern specifying assemblies to be tested using NUnit
 let testAssemblies = "tests/**/bin/Release/*Tests*.dll"

@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
@@ -34,6 +35,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Resharper.Paket.Tests", "tests\Resharper.Paket.Tests\Resharper.Paket.Tests.fsproj", "{10EE463A-C278-421F-8436-CB1E58375724}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.Paket.CSharp.Tests", "tests\Resharper.Paket.CSharp.Tests\Resharper.Paket.CSharp.Tests.csproj", "{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.Paket.CSharp", "src\Resharper.Paket.CSharp\Resharper.Paket.CSharp.csproj", "{7355A959-CB4F-4C80-A984-CD47AE14527F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +53,14 @@ Global
 		{10EE463A-C278-421F-8436-CB1E58375724}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10EE463A-C278-421F-8436-CB1E58375724}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10EE463A-C278-421F-8436-CB1E58375724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7355A959-CB4F-4C80-A984-CD47AE14527F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7355A959-CB4F-4C80-A984-CD47AE14527F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7355A959-CB4F-4C80-A984-CD47AE14527F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7355A959-CB4F-4C80-A984-CD47AE14527F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,5 +69,6 @@ Global
 		{83F16175-43B1-4C90-A1EE-8E351C33435D} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{8E6D5255-776D-4B61-85F9-73C37AA1FB9A} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{10EE463A-C278-421F-8436-CB1E58375724} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{B5F6D89D-532C-4BDD-8F40-E2E8F68DF3A5} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
 	EndGlobalSection
 EndGlobal

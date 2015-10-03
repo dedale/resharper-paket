@@ -1,0 +1,9 @@
+https://github.com/dedale/resharper-paket
+https://www.jetbrains.com/resharper/devguide/Extensions/Plugins/ProjectSetup/InitialInstallation.html
+http://fsharp.github.io/FAKE/create-nuget-package.html
+https://www.nuget.org/account
+
+Use case:
+* Project P1 reference nuget N1 via paket
+* Project P2 uses some type from N1
+* Tooltip: reference N1 (via paket). 
