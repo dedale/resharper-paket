@@ -142,5 +142,6 @@ copyFiles()
 buildDocumentation()
 #endif
 #if REFERENCE
-buildReference()
+// fsi throws SOE because of Paket.Core reference
+//buildReference()
 #endif
