@@ -19,5 +19,7 @@ summary
     Plugin for ReSharper to support Paket references correctly
 description
     Plugin for ReSharper to support Paket references correctly
-
-
+files
+	../../bin/Resharper.Paket.CSharp/Resharper.Paket.CSharp.* ==> DotFiles
+dependencies
+	Wave 3.0

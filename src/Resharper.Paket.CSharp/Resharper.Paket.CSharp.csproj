@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fix.cs" />
     <Compile Include="PaketApi.cs" />
     <Compile Include="PaketModuleReferencer.cs" />
     <Compile Include="PaketModuleReferencerImpl.cs" />
@@ -56,6 +57,10 @@
   </Target>
   -->
   <ItemGroup>
+    <None Include="paket.references" />
+    <None Include="paket.template.removed" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="antlr.runtime">
       <HintPath>..\..\packages\Antlr2.Runtime\lib\antlr.runtime.dll</HintPath>
       <Private>True</Private>
@@ -63,6 +68,17 @@
     </Reference>
   </ItemGroup>
   <Import Project="..\..\packages\Antlr2.Tools\build\Antlr2.Tools.targets" Condition="Exists('..\..\packages\Antlr2.Tools\build\Antlr2.Tools.targets')" Label="Paket" />
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v2.0' Or $(TargetFrameworkVersion) == 'v3.0' Or $(TargetFrameworkVersion) == 'v3.5' Or $(TargetFrameworkVersion) == 'v4.0' Or $(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">
+      <ItemGroup>
+        <Reference Include="Ionic.Zip.Reduced">
+          <HintPath>..\..\packages\DotNetZip.Reduced\lib\net20\Ionic.Zip.Reduced.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v2.0' Or $(TargetFrameworkVersion) == 'v3.0' Or $(TargetFrameworkVersion) == 'v3.5')">
       <ItemGroup>
@@ -206,6 +222,13 @@
       <Paket>True</Paket>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop">
+      <HintPath>..\..\packages\JetBrains.Platform.Lib.VisualStudio.AnyVs.ShellInterop.PrivateBuild\lib\Microsoft.VisualStudio.Shell.Interop.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
+  </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v2.0' Or $(TargetFrameworkVersion) == 'v3.0' Or $(TargetFrameworkVersion) == 'v3.5' Or $(TargetFrameworkVersion) == 'v4.0' Or $(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">
       <ItemGroup>
@@ -219,7 +242,9 @@
   </Choose>
   <Import Project="..\..\packages\JetBrains.Platform.Symbols\build\JetBrains.Platform.Symbols.Targets" Condition="Exists('..\..\packages\JetBrains.Platform.Symbols\build\JetBrains.Platform.Symbols.Targets')" Label="Paket" />
   <Import Project="..\..\packages\JetBrains.Psi.Features.Core\build\JetBrains.Psi.Features.Core.Targets" Condition="Exists('..\..\packages\JetBrains.Psi.Features.Core\build\JetBrains.Psi.Features.Core.Targets')" Label="Paket" />
+  <Import Project="..\..\packages\JetBrains.Psi.Features.src\build\JetBrains.Psi.Features.src.Targets" Condition="Exists('..\..\packages\JetBrains.Psi.Features.src\build\JetBrains.Psi.Features.src.Targets')" Label="Paket" />
   <Import Project="..\..\packages\JetBrains.Psi.Features.Tasks\build\JetBrains.Psi.Features.Tasks.Targets" Condition="Exists('..\..\packages\JetBrains.Psi.Features.Tasks\build\JetBrains.Psi.Features.Tasks.Targets')" Label="Paket" />
+  <Import Project="..\..\packages\JetBrains.Psi.Features.UnitTesting\build\JetBrains.Psi.Features.UnitTesting.Targets" Condition="Exists('..\..\packages\JetBrains.Psi.Features.UnitTesting\build\JetBrains.Psi.Features.UnitTesting.Targets')" Label="Paket" />
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.0' Or $(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">
       <ItemGroup>
@@ -328,14 +353,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NVelocity">
-      <HintPath>..\..\packages\NVelocity\lib\NVelocity.dll</HintPath>
+    <Reference Include="nunit.core">
+      <HintPath>..\..\packages\NUnit.Core\lib\nunit.core.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\..\packages\NUnit.Core\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
+    <Reference Include="nunit.util">
+      <HintPath>..\..\packages\NUnit.Core\lib\nunit.util.dll</HintPath>
       <Private>True</Private>
       <Paket>True</Paket>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="paket.references" />
+    <Reference Include="NVelocity">
+      <HintPath>..\..\packages\NVelocity\lib\NVelocity.dll</HintPath>
+      <Private>True</Private>
+      <Paket>True</Paket>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">

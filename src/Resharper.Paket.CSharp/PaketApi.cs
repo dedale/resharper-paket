@@ -15,6 +15,13 @@ using System.Threading.Tasks;
 
     FileSystemWatcher on paket.dependencies?
     Update cache with list of packages (with list of dlls)
+
+
+    namespace JetBrains.ReSharper.Intentions.QuickFixes
+{
+  public sealed class ReferenceModuleAndTypeFixItem : BulbActionBase
+
+
 */
 
 namespace Resharper.Paket.CSharp

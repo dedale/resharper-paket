@@ -46,15 +46,19 @@ namespace Resharper.Paket.CSharp
         {
             if (!IsProjectModule(module) || !IsAssemblyModule(moduleToReference))
                 return false;
+            return true;
+            /*
             //Logger.LogMessage(LoggingLevel.VERBOSE, "[PAKET PLUGIN] Checking if module '{0}' is a paket package", moduleToReference.DisplayName);
             var assemblyLocations = GetAllAssemblyLocations(moduleToReference);
             var canReference = module.GetSolution().GetComponent<PaketApi>().AreAnyAssemblyFilesPaketPackages(assemblyLocations);
             //Logger.LogMessage(LoggingLevel.VERBOSE, "[PAKET PLUGIN] Module '{0}' is {1}a paket package", moduleToReference.DisplayName, canReference ? string.Empty : "NOT ");
             return canReference;
+            */
         }
         internal bool ReferenceModule(IPsiModule module, IPsiModule moduleToReference)
         {
-            throw new NotImplementedException();
+            return false;
+            //throw new NotImplementedException();
         }
     }
 }

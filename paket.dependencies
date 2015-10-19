@@ -2,6 +2,7 @@ source https://nuget.org/api/v2
 
 nuget FSharp.Formatting
 nuget JetBrains.Psi.Features.Core
+nuget Jetbrains.Psi.Features.src
 nuget NUnit 
 nuget NUnit.Runners
 nuget FAKE

@@ -1,0 +1,24 @@
+type project
+owners
+    Vianney PHILIPPE
+authors 
+    Vianney PHILIPPE
+projectUrl
+    http://github.com/dedale/Resharper.Paket
+iconUrl
+    https://raw.githubusercontent.com/dedale/Resharper.Paket/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/dedale/Resharper.Paket/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    paket visualstudio resharper
+summary
+    Plugin for ReSharper to support Paket references correctly
+description
+    Plugin for ReSharper to support Paket references correctly
+files
+	bin/Resharper.Paket/Resharper.Paket.* ==> DotFiles
+
