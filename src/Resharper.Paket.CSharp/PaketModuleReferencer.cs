@@ -1,21 +1,14 @@
 ﻿using JetBrains.ReSharper.Psi.Modules;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using JetBrains.Annotations;
 using JetBrains.Metadata.Reader.API;
 using JetBrains.ReSharper.Psi;
-using JetBrains.ProjectModel.Model2.Assemblies.Interfaces;
 
 namespace Resharper.Paket.CSharp
 {
     public class PaketModuleReferencer : IModuleReferencer
     {
         #region Fields
-        [NotNull]
-        private readonly PaketModuleReferencerImpl moduleReferencer;
+        [NotNull] private readonly PaketModuleReferencerImpl moduleReferencer;
         #endregion
         public PaketModuleReferencer([NotNull] PaketModuleReferencerImpl moduleReferencer)
         {

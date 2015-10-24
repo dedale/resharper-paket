@@ -1,10 +1,6 @@
 ﻿using JetBrains.ProjectModel;
 using JetBrains.Util;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /*
     Paket available: dependencies.locate returns something
@@ -26,7 +22,7 @@ using System.Threading.Tasks;
 
 namespace Resharper.Paket.CSharp
 {
-    [SolutionComponent]
+    //[SolutionComponent]
     public class PaketApi
     {
         private bool IsPaketAvailable
