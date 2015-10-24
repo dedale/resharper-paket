@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fix.cs" />
+    <Compile Include="PaketFix.cs" />
     <Compile Include="IPaketZone.cs" />
     <Compile Include="PaketApi.cs" />
     <Compile Include="PaketFixItem.cs" />

@@ -12,6 +12,6 @@ namespace Resharper.Paket.CSharp
         {
             return null;
         }
-        public override string Text => "Add 'Hardcoded' Paket dependency and use 'Hardcoded'";
+        public override string Text => "Add '***' Paket dependency and use '***'";
     }
 }
